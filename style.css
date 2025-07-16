@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+html {
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    color: #f4f4f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    position: relative;
+    padding: auto;
+    height: 200px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro h2 {
+    color: #fff;
+    font-size: 8em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-left: 150%;
+}
+
+.intro h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #03a9f4;
+}
+
+.intro h2:nth-child(2) {
+    color: #03a9f4;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        clip-path: polygon(
+            0% 45%,
+            16% 44%,
+            33% 50%,
+            54% 60%,
+            70% 61%,
+            84% 59%,
+            100% 52%,
+            100% 100%,
+            0% 100%
+        );
+    }
+
+    50% {
+        clip-path: polygon(
+            0% 60%,
+            15% 65%,
+            34% 66%,
+            51% 62%,
+            67% 50%,
+            84% 45%,
+            100% 46%,
+            100% 100%,
+            0% 100%
+        );
+    }
+}
+
+.transition {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.transition p {
+    font-size: 16pt;
+}
+
+.hidden {
+    display: none;
+}
+
+.other h2 {
+    text-align: center; 
+    font-size: 60pt; 
+    color: transparent;
+    -webkit-text-stroke: 2px #03a9f4;
+}
+
+.other p {
+    text-align: center; 
+    margin: 15px 20%;
+    font-size: 17pt;
+}
+
+p a {
+    color: #15aaf0;
+}
+
+.icon_links {
+    color: transparent;
+}
+
+.icon_links .icon{
+    margin: auto 5px;
+    width: 50pt; 
+    height: 50pt;
+}
+
+#contact .links {
+    text-align: center;
+}
